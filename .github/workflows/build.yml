@@ -29,6 +29,9 @@ jobs:
         pip install pytest
         pip install flake8
         flake8 --config=.flake8 tensorflow_graphics/
+    - name: Check bazel version
+      run: |
+        bazel version
     - name: Install pip requirements
       run: |
         pip install -r requirements.txt
